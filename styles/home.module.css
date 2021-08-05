@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+.headerHome{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+
+}
+
+.headerHome>.leftArrow{
+    transform: rotate(180deg);
+    font-size: 40px;
+    width: 40px;
+}
+
+.headerHome>.rightArrow{
+    font-size: 40px;
+    width: 40px;
+}
+
+.headerHome>.content{
+    width: Calc(96% - 80px);
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 500px;
+}
+.headerHome>.content::-webkit-scrollbar{
+    width: 0;
+}
+
+.headerHomeCard{
+    min-width:32%;
+    margin-right: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.headerHomeCard>.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.headerHomeCard>.content{
+    top: 70%;
+    left: 10%;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    height: 27%;
+    padding: 20px;
+    transition: 1s;
+    transform-origin: all;
+}
+
+.headerHomeCard>.content:hover{
+    top: 30%;
+    height: 65%;
+}
+
+.headerHomeCard>.content>.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerHomeCard>.content>.header>.time{
+    display: flex;
+    align-items: center;
+}
+
+.headerHomeCard>.content>.header>.like{
+    display: flex;
+    align-items: center;
+}
+
+.headerHomeCard>.content>.header>.time>.icon,.headerHomeCard>.content>.header>.like>.icon{
+    margin-right: 5px;
+}
+
+.headerHomeCard>.content>.header>.time>.title,.headerHomeCard>.content>.header>.like>.title,.middlePage>.first>.content>.header>.time>.title,.middlePage>.first>.content>.header>.like>.title{
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #060606;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.headerHomeCard>.content>.title,.middlePage>.first>.content>.title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.headerHomeCard>.content>.text,.middlePage>.first>.content>.text{
+    font-size: 17px;
+    color: grey;   
+}
+
+
+.headerHomeCard>.content>.profile,.middlePage>.first>.content>.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headerHomeCard>.content>.profile>img,.middlePage>.first>.content>.profile>img{
+    border-radius: 100%;
+}
+
+.headerHomeCard>.content>.profile>.right{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.headerHomeCard>.content>.profile>.right>.username,.middlePage>.first>.content>.profile>.right>.left>.username{
+   height: 10px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 20px;
+   color: #060606;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+}
+
+.headerHomeCard>.content>.profile>.right>.date,.middlePage>.first>.content>.profile>.right>.left>.date{
+    height: 10px;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1em;
+    color: #7b7b7b;
+}
+
+.middlePage{
+    width: Calc(93% - 80px);
+    display: flex;
+    margin-left: Calc(3% + 40px);
+    justify-content: space-around;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.middlePage>.first{
+    width: 32%;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.middlePage>.second{
+    width: 32%;
+    height: 90vh;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.middlePage>.second::-webkit-scrollbar{
+    width: 3;
+}
+
+.middlePage>.third{
+    width: 32%;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middlePage>.first>.header,.middlePage>.third>.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.middlePage>.first>.header>.title,.middlePage>.third>.header>.title{
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    margin-right: 20px;
+    width: 140px;
+}
+
+.middlePage>.first>.header>.decor,.middlePage>.third>.header>.decor{
+    border-bottom: 1px solid #7b7b7b;
+    height: 10px;
+    width: Calc(100% - 140px);
+    border-top: 1px solid #7b7b7b;
+}
+
+
+
+.middlePage>.first>img{
+    width:100%;
+    height: 300px;
+}
+
+.middlePage>.first>.content{
+    
+}
+
+.middlePage>.first>.content>.header{
+    display: flex;
+    align-items: center;
+}
+
+.middlePage>.first>.content>.header>.time,.middlePage>.first>.content>.header>.like{
+    display: flex;
+    align-items: center;
+
+}
+.middlePage>.first>.content>.header>.time{
+    margin-right: 20px;
+}
+
+.middlePage>.first>.content>.header>.time>.icon,.middlePage>.first>.content>.header>.like>.icon{
+    margin-right: 10px;
+}
+
+
+.middlePage>.first>.content>.title{
+    
+}
+
+.middlePage>.first>.content>.text{
+    
+}
+
+.middlePage>.first>.content>.profile{
+    display: flex;
+}
+
+
+.middlePage>.first>.content>.profile>img{
+    margin-right: 10px;
+}
+.middlePage>.first>.content>.profile>.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+    width: 100%;
+    
+}
+
+.middlePage>.first>.content>.profile>.right>.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.middlePage>.first>.content>.profile>.right>.socialMedia>.containerIcon{
+    margin-left: 20px;
+    background-color: rgba(165, 165, 165, 0.342);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.middlePage>.first>.content>.profile>.right>.socialMedia>.containerIcon>.icon{
+    font-style: italic;
+}
+
+
+.middlePage>.second>.item{
+    display: flex;
+    
+}
+
+.middlePage>.second>.item>img{
+    width: 100px;
+    height: 100px;
+}
+
+.middlePage>.second>.item>.content{
+    width: Calc(100% - 120px);
+    margin-left: 20px;
+}
+
+
+.middlePage>.second>.item>.content>.header{
+    display: flex;
+    align-items: center;
+}
+
+.middlePage>.second>.item>.content>.header>.icon{
+    margin-right: 10px;
+    font-size: 17px;
+}
+.middlePage>.second>.item>.content>.header>.title{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.middlePage>.second>.item>.content>.text{
+    margin-top: -6px;
+    font-size: 19px;
+    margin-left: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.middlePage>.third>img{
+    height: 85%;
+    width: 100%;
+}
+
+
+.galleryComp{
+    width: 80%;
+    margin-top: -50px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.galleryComp>.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.galleryComp>.header>.decor{
+    border-bottom: 1px solid #7b7b7b;
+    height: 10px;
+    width: 40%;
+    border-top: 1px solid #7b7b7b;
+}
+.galleryComp>.header>.title{
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    margin-right: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.galleryComp>.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.galleryComp>.content>.container{
+    position: relative;
+    height: 30vh;
+    cursor: pointer;
+    transition: 1s;
+    transform-origin: all;
+}
+.galleryComp>.content>.container>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.galleryComp>.content>.container:hover{
+    transform: scale(1.03);
+}
+.galleryComp>.content>.container>.ico{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+
+.galleryComp>.gofor{
+    background-color: #9AB4C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    height: 34px;
+    color: white;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.galleryComp>.gofor>.icon{
+    margin-right: 10px;
+}
+
+.galleryComp>.gofor>.title{
+    width: max-content;
+}
+
+.ContactComp{
+    background-image: url("/home/contact_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.ContactComp>.title{
+    font-size: 36px;
+    font-family: 'Merriweather',serif;
+    height: 4px;
+}
+.ContactComp>.sousTitle{
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    height: 20px;
+    text-align: center;
+}
+.ContactComp>.gofor{
+    background-color: #9AB4C7;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+
+.receptenComp{
+
+}
+
+.receptenComp>.header{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+.receptenComp>.header>.decor{
+    border-bottom: 1px solid #7b7b7b;
+    height: 10px;
+    width: 40%;
+    border-top: 1px solid #7b7b7b;
+}
+.receptenComp>.header>.title{
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    margin-right: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.receptenComp>.content{
+    display: grid;
+    grid-template-columns: 1Fr 1fr 1fr;
+    grid-gap: 27px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.receptenComp>.content>.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.receptenComp>.content>.item>img{
+    width: 100%;
+    height: 40vh;
+}
+
+.receptenComp>.content>.item>.detail{
+
+}
+
+.receptenComp>.content>.item>.detail>.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    justify-content: flex-start;
+}
+.receptenComp>.content>.item>.detail>.header>.time{
+    display: flex;
+    align-items: center;
+}
+.receptenComp>.content>.item>.detail>.header>.time>.icon,.receptenComp>.content>.item>.detail>.header>.like>.icon{
+    margin-right: 5px;
+}
+.receptenComp>.content>.item>.detail>.header>.time>.title,.receptenComp>.content>.item>.detail>.header>.like>.title{
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #060606;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.receptenComp>.content>.item>.detail>.header>.like{
+    display: flex;
+    align-items: center;
+}
+
+.receptenComp>.content>.item>.detail>.title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.receptenComp>.content>.item>.detail>.text{
+    font-size: 17px;
+    color: grey; 
+}
+
+.receptenComp>.content>.item>.detail>.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.receptenComp>.content>.item>.detail>.profile>img{
+    border-radius: 100%;
+}
+.receptenComp>.content>.item>.detail>.profile>.right{
+    margin-left: 20px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+.receptenComp>.content>.item>.detail>.profile>.right>.left>.username{
+    height: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #060606;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.receptenComp>.content>.item>.detail>.profile>.right>.left>.date{
+    height: 10px;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1em;
+    color: #7b7b7b;
+}
+.receptenComp>.content>.item>.detail>.profile>.right>.socialMedia{
+    margin-left: 20px;
+    background-color: rgba(165, 165, 165, 0.342);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.receptenComp>.content>.item>.detail>.profile>.right>.socialMedia>.icon{
+    color: grey;
+}
+.receptenComp>.content>.item>.detail>.profile>.right>.socialMedia>.iconLiked{
+    color: red;
+}
+.receptenComp>.content>.item>.detail>.gofor{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.receptenComp>.content>.item>.detail>.gofor>.title{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10px;
+    height: 20px;
+    transition: 1.3s;
+    transform-origin: all;
+    padding-left: 5px;
+}
+.receptenComp>.content>.item>.detail>.gofor>.title:hover{
+    background-color: #9AB4C7;
+}
+.receptenComp>.content>.item>.detail>.gofor>.iconContainer{
+    background-color: #9AB4C7;
+    height: 20px;
+}
+.receptenComp>.content>.item>.detail>.gofor>.iconContainer>.icon{
+    font-size: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.OfferComp{
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 56vh;
+}
+.OfferComp>.title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.OfferComp>.sousTitle{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: #8f9599;
+    margin-top: -20px;
+}
+.OfferComp>.gofor{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.SupFooterComp{
+    background-image: url("/home/footer_bg.png");
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+}
+.SupFooterComp>.title{
+    font-size: 50px;
+    font-family: 'Merriweather,serif';
+    font-weight: 900;
+    width: 44%;
+}
+.SupFooterComp>.text{
+    width: 40%;
+    font-size: 20px;
+    color: #8f9599;
+}
+.SupFooterComp>.books{
+    display: flex;
+    justify-content: flex-start;
+}
+.SupFooterComp>.books>img{
+    
+}
+
+@media (max-width:1147px) {
+    .middlePage{
+        flex-direction: column;
+    }
+    .middlePage>.first,.middlePage>.second{
+        width: 100%;
+    }
+
+    .middlePage>.first>img{
+        height: 80vh;
+    }
+
+    .middlePage>.second>.item{
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        height: 30vh;
+    }
+    .middlePage>.second>.item>img{
+        height: 100%;
+        max-width: 30%;
+        min-width: 30%;
+    }
+
+    .middlePage>.third{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .middlePage>.third>img{
+        height: 80vh;
+        width: 95%;
+    }
+}
+
+@media (max-width:1134px) {
+    .headerHomeCard{
+        min-width: 50%;
+    }
+}
+@media (max-width:941px) {
+    .receptenComp>.content{
+        grid-template-columns: 1Fr;
+    }
+    .receptenComp>.content>.item>img{
+        height: 85vh;
+    }
+}
+
+@media (max-width:844px) {
+    .headerHomeCard{
+        min-width: 100%;
+    }
+}
+
+@media (max-width:740px) {
+    .SupFooterComp{
+        height: inherit;
+        background-size: cover;
+    }
+    .SupFooterComp>.title{
+        width: 100%;
+        text-align: center;
+    }
+    .SupFooterComp>.text{
+        width: 65%;
+    }
+    .SupFooterComp>.books{
+        flex-direction: column;
+    }
+    .galleryComp>.content{
+        width: 100%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+@media (max-width:500px) {
+    .galleryComp>.content{
+        grid-template-columns: 1Fr;
+    }
+    .galleryComp>.content>.container{
+        height: 70vh;
+    }
+}

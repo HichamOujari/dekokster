@@ -1,0 +1,95 @@
+.navbar{
+    width: 100%;
+}
+
+.navbar>.entete{
+    height: 40px;
+    width: 100%;
+    background-color: #9AB4C7;
+}
+
+.navbar>.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar>.menu>.menuIcon{
+    position: absolute;
+    font-size: 35px;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.navbar>.menu>.menuIcon>.icon{
+    font-size: 35px;
+}
+.navbar>.menu>ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar>.menu>ul>li{
+    margin-right: 40px;
+}
+
+.navbar>.menu>ul>li>a{
+    font-weight:bold;
+    font-size: 19px;
+    color: #657b8b;
+}
+
+.navbar>.menu>.logo{
+    width: 13em;
+    height: 13em;
+    background-size: contain;
+    background-image: url("/logo.png");
+    background-repeat: no-repeat;
+}
+
+.navbar>.mobile_nav{
+   list-style: none;
+   line-height: 40px;
+   direction: rtl;
+   display: none;
+}
+.navbar>.mobile_nav>li{
+    color: #4B5673;
+    font-size: 20px;
+}
+.navbar>.mobile_nav>li>a{
+    font-weight: lighter;
+}
+.navbar>.menustateCheckbox:checked~.mobile_nav{
+    display: block;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #9AB4C7;
+    padding-right: 30px;
+    padding-left: 30px;
+    align-items: center;
+}
+.footer>.left{
+    font-size: 18px;
+}
+
+@media (max-width:844px) {
+    .navbar>.menu>ul{
+        display: none;
+    }
+    .navbar>.entete{
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .navbar>.menu>.logo{
+        background-image: url("/logo_mobile.png");
+        height: 50px;
+    }
+    .navbar>.menu>.menuIcon{
+        display: flex;
+    }
+}
