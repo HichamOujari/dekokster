@@ -11,7 +11,7 @@ export default class HomeHeader extends Component {
   }
   render() {
     return (
-      <div className={style.headerHome} data-aos="fade-down">
+      <div className={style.headerHome} >
           <ArrowForwardIcon className={style.leftArrow} />
           <div className={style.content}  onScroll={(e)=>{
               console.log(e);
