@@ -54,7 +54,7 @@
 }
 
 .headerHomeCard>.content{
-    top: 70%;
+    bottom: 10px;
     left: 10%;
     overflow: hidden;
     background-color: white;
@@ -67,8 +67,8 @@
 }
 
 .headerHomeCard>.content:hover{
-    top: 30%;
-    height: 65%;
+    bottom: 10px;
+    height: 75%;
 }
 
 .headerHomeCard>.content>.header{
