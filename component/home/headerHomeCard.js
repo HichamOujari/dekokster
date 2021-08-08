@@ -12,7 +12,7 @@ export default class HeaderHomeCard extends Component {
   }
   render() {
     return (
-      <div className={style.headerHomeCard}>
+      <div className={style.headerHomeCard}  data-aos="fade-down">
           <img alt="" className={style.image} src={this.props.data.image} />
           <div className={style.content}>
             <div className={style.header}>
